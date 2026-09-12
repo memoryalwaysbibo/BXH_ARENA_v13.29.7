@@ -1,0 +1,1 @@
+{"firestore":{"rules":"firestore_v13.29.4.rules"},"emulators":{"firestore":{"port":8184},"ui":{"enabled":false},"singleProjectMode":true}}
