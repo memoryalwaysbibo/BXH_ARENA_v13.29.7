@@ -1,0 +1,12 @@
+{
+  "functions": {
+    "source": "functions",
+    "runtime": "nodejs22",
+    "predeploy": [
+      "npm --prefix \"$RESOURCE_DIR\" run check"
+    ]
+  },
+  "firestore": {
+    "rules": "firestore_v13.29.4.rules"
+  }
+}
