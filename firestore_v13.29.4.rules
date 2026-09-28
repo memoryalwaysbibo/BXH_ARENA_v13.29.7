@@ -337,7 +337,7 @@ service cloud.firestore {
       let actorData = get(userPath(request.auth.uid)).data;
       let tourAfterData = getAfter(tourPath(code)).data;
       let pubAfterData = getAfter(pubPath(code)).data;
-      return canManageTournamentData(actorData, tournamentData)
+      return isStaffOrAboveData(actorData)
         && tournamentData.tournamentPhase == 'waiting'
         && tournamentData.archiveStatus != 'completed'
         && resource.data.status == 'waitlist'
